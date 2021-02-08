@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="data"
+        type="com.nuveq.data_entry.model.porduct_data.Product" />
+</data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_dark"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:background="@drawable/circle_deep_white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:padding="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"
+                android:transitionName="trans"
+                app:loadImage="@{data.image}"
+                app:civ_border_width="0dp"
+                app:civ_circle_background_color="@android:color/transparent" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textSize="@dimen/_9sdp"
+            android:textColor="@color/testcolorblue"
+            android:gravity="center"
+            android:id="@+id/tvItemName"
+            android:text="@{data.name}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/rv"
+            app:layout_constraintStart_toStartOf="@+id/rv"
+            app:layout_constraintEnd_toEndOf="@+id/rv"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OFFTAKE ENTRY</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="logout">প্রস্থান করুন</string>
+    <string name="profile">আমার প্রোফাইল</string>
+    <string name="logout_title">প্রস্থান করুন</string>
+    <string name="logout_message">আপনি কি অ্যাপ থেকে লগ আউট করতে নিশ্চিত?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="no_internet">কোন ইন্টারনেট নেই!</string>
+    <string name="connect">সংযোগ করুন</string>
+    <string name="menu_setting">সেটিংস</string>
+    <string name="menu_history">ইতিহাস</string>
+    <string name="empty_result">কোন তথ্য নেই</string>
+    <string name="search">অনুসন্ধান</string>
+    <string name="alert">সতর্ক করুন!</string>
+    <string name="save_txt">সংরক্ষণ করুন</string>
+    <string name="no">না</string>
+    <string name="yes">হ্যাঁ</string>
+    <string name="save_alert">আপনি কি এখন ডেটা সংরক্ষণ করতে চান?</string>
+    <string name="loan">Loan</string>
+    <string name="drawer_icon">Drawer Icon</string>
+    <string name="save_this_change">আপনি কি এই পরিবর্তনটি সংরক্ষণ করতে চান?</string>
+    <string name="save_this_change_successfully">সাফল্যের সাথে</string>
+    <string name="dialoge_text">আপনি কি নিশ্চিত, অ্যাপ থেকে প্রস্থান করতে চান?</string>
+    <string name="it_support">ডিজিএসইবিএ সফটওয়্যার লি:</string>
+    <string name="change_pass">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="home">হোম</string>
+    <string name="please_wait">অনুগ্রহপূর্বক অপেক্ষা করুন...</string>
+    <string name="user_id">ব্যবহারকারীর নাম</string>
+    <string name="pass">পাসওয়ার্ড</string>
+    <string name="login">প্রবেশ করুন</string>
+    <string name="er">ত্রুটি!</string>
+    <string name="input_name">অনুগ্রহ করে ব্যবহারকারীর নাম দিন</string>
+    <string name="input_pass">অনুগ্রহ করে পাসওয়ার্ড দিন</string>
+    <string name="new_order">নতুন অর্ডার</string>
+    <string name="outlate">আউটলেট নম্বর</string>
+    <string name="target">মাসিক লক্ষ্য</string>
+    <string name="d_target">দৈনিক লক্ষ্য</string>
+    <string name="working_day">কাজের দিন</string>
+    <string name="till_date">তারিখ অফ-টেক পর্যন্ত</string>
+    <string name="off_take">অফ-টেক পার দিন</string>
+    <string name="c_name">গ্রাহকের নাম</string>
+    <string name="c_phone">গ্রাহকের যোগাযোগ নম্বর</string>
+    <string name="c_address">গ্রাহকের ঠিকানা</string>
+    <string name="select_product">পণ্য নির্বাচন করুন</string>
+    <string name="selected_list">নির্বাচিত পণ্য তালিকা</string>
+    <string name="p_name">পণ্যের নাম</string>
+    <string name="p_qty">পরিমাণ</string>
+    <string name="p_sku">এসকিউ</string>
+    <string name="enter_qty">পরিমাণ লিখুন</string>
+    <string name="select_sku">এসকিউ নির্বাচন করুন</string>
+    <string name="add_to_list">তালিকা সংযুক্ত করুন</string>
+
+    <string name="change_language">ভাষা পরিবর্তন করুন</string>
+    <string name="data_entry">তথ্য সংরক্ষণ</string>
+    <string name="store">স্টোর</string>
+
+    <string name="change">পরিবর্তন</string>
+    <string name="old_pass">পুরানো পাসওয়ার্ড</string>
+    <string name="new_pass">নতুন পাসওয়ার্ড</string>
+    <string name="con_pass">কনফার্ম পাসওয়ার্ড</string>
+    <string-array name="ld_activityScreenTitles">
+        <item>হোম</item>
+        <item>আমার প্রোফাইল</item>
+        <item>ইতিহাস</item>
+        <item>পাসওয়ার্ড পরিবর্তন</item>
+        <item />
+        <item>প্রস্থান করুন</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_person</item>
+        <item>@drawable/ic_list</item>
+        <item>@drawable/ic_lock</item>
+        <item>0</item>
+        <item>@drawable/log_out</item>
+    </array>
+
+</resources>

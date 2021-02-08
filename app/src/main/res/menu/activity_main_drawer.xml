@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:enabled="true"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:enabled="true"
+            android:icon="@drawable/man_user"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/nav_attendance_list"
+            android:icon="@drawable/planer_list"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_change_pass"
+            android:icon="@drawable/planer_list"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/log_out"
+            android:title="@string/logout" />
+
+        <!-- <item
+             android:id="@+id/nav_approved_apprisal"
+             android:icon="@drawable/ic_approved"
+             android:title="@strings/approved_apprisal" />-->
+
+    </group>
+</menu>

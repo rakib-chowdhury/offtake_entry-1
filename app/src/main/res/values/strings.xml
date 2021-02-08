@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OFFTAKE ENTRY</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Log Out</string>
+    <string name="profile">আমার প্রোফাইল</string>
+    <string name="drawer_icon">Drawer Icon</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_message">Are you sure you want to logout?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--common strings-->
+    <string name="no_internet">No internet!</string>
+    <string name="connect">Connect</string>
+    <!--- Addmob   !-->
+
+    <string name="menu_setting">Settings</string>
+    <string name="menu_history">ইতিহাস</string>
+    <string name="empty_result">no data</string>
+    <string name="search">search...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="alert">Alert please !</string>
+    <string name="save_txt">Save</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="save_alert">Do you want to save data now?</string>
+    <string name="loan">Loan</string>
+    <string name="save_this_change">Do you want to save this change?</string>
+    <string name="save_this_change_successfully">Data successfully saved</string>
+    <string name="dialoge_text">Are you sure,want exit from App?</string>
+    <string name="it_support">Developed by DIGISEBA Software LTD</string>
+    <string name="change_pass">পাসওয়ার্ড পরিবর্তন</string>
+    <string name="home">হোম</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="user_id">User name</string>
+    <string name="pass">Password</string>
+    <string name="login">Login</string>
+    <string name="er">Error!</string>
+    <string name="input_name">please input user name</string>
+    <string name="input_pass">please input password</string>
+    <string name="new_order">New Order</string>
+    <string name="outlate">Outlet Number</string>
+    <string name="target">Monthly Target</string>
+    <string name="d_target">Daily Target</string>
+    <string name="working_day">Working Day</string>
+    <string name="till_date">Till Date Off-Take</string>
+    <string name="off_take">Off-Take Per Day</string>
+    <string name="c_name">Consumer name</string>
+    <string name="c_phone">Consumer contact number</string>
+    <string name="c_address">Consumer address</string>
+    <string name="select_product">Select product to entry</string>
+    <string name="selected_list">Selected product List</string>
+    <string name="p_name">Product Name</string>
+    <string name="p_qty">Quantity</string>
+    <string name="p_sku">SKU</string>
+    <string name="enter_qty">Enter quantity</string>
+    <string name="select_sku">Select SKU</string>
+    <string name="add_to_list">Add to List</string>
+    <string name="change_language">Change Language</string>
+    <string name="data_entry">Data Entry</string>
+    <string name="store">Store</string>
+    <string name="change">Change</string>
+    <string name="old_pass">Old Password</string>
+    <string name="new_pass">New Password</string>
+    <string name="con_pass">Confirm Password</string>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>HOME</item>
+        <item>My Profile</item>
+        <item>History</item>
+        <item>Change Password</item>
+        <item />
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_person</item>
+        <item>@drawable/ic_list</item>
+        <item>@drawable/ic_lock</item>
+        <item>0</item>
+        <item>@drawable/log_out</item>
+    </array>
+
+</resources>
