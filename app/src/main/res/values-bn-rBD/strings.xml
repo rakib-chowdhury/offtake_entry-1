@@ -52,15 +52,27 @@
     <string name="enter_qty">পরিমাণ লিখুন</string>
     <string name="select_sku">এসকিউ নির্বাচন করুন</string>
     <string name="add_to_list">তালিকা সংযুক্ত করুন</string>
-
-    <string name="change_language">ভাষা পরিবর্তন করুন</string>
+    <string name="en">en</string>
+    <string name="bn">বাংলা</string>
+    <string name="change_language">ভাষা নির্বাচন করুন</string>
     <string name="data_entry">তথ্য সংরক্ষণ</string>
     <string name="store">স্টোর</string>
+    <string name="english">English</string>
 
     <string name="change">পরিবর্তন</string>
     <string name="old_pass">পুরানো পাসওয়ার্ড</string>
     <string name="new_pass">নতুন পাসওয়ার্ড</string>
     <string name="con_pass">কনফার্ম পাসওয়ার্ড</string>
+    <string name="lang_setting">ভাষা সেটিংস</string>
+
+    <string name="added_list">তালিকায় যুক্ত হয়েছে</string>
+    <string name="fill_up">ক্ক্ষেত্রগুলি পূরণ করুন</string>
+    <string name="empty_cart">পণ্য তালিকা খালি</string>
+    <string name="enter_con_name">গ্রাহকের নাম প্রবেশ করুন</string>
+    <string name="enter_area">লিভিং ঠিকানা প্রবেশ করুন</string>
+    <string name="enter_phone">যোগাযোগ নম্বর প্রবেশ করুন</string>
+    <string name="valid_phone">একটি বৈধ মোবাইল নম্বর ইনপুট করুন!</string>
+
     <string-array name="ld_activityScreenTitles">
         <item>হোম</item>
         <item>আমার প্রোফাইল</item>

@@ -169,14 +169,14 @@ class DataEntryActivity : BaseActivity(), ProductCatAdapter.Interaction, Product
         btnSave.setOnClickListener {
 
             if (!isValid(etBrand, etQuantity)) {
-                AppUtils.message(etQuantity, "Please fill up field")
+                AppUtils.message(etQuantity, getString(R.string.fill_up))
                 return@setOnClickListener
             }
             product.productName = etBrand.text.toString()
             product.quantity = Integer.parseInt(etQuantity.text.toString())
             postProductList.add(product)
 
-            showToast("Add to list")
+            showToast(getString(R.string.added_list))
             dialog.dismiss()
             productAdapter!!.submitList(postProductList)
         }
@@ -196,24 +196,24 @@ class DataEntryActivity : BaseActivity(), ProductCatAdapter.Interaction, Product
 
     private fun isMainFormValid(): Boolean {
         if (postProductList.isEmpty()) {
-            AppUtils.message(binding!!.root, "Product cart is empty")
+            AppUtils.message(binding!!.root, getString(R.string.empty_cart))
             return false
         } else if (binding.etName.text.toString().equals("")) {
-            AppUtils.message(binding!!.root, "Please enter name")
+            AppUtils.message(binding!!.root, getString(R.string.enter_con_name))
 
             return false
         } else if (binding.etArea.text.toString().equals("")) {
-            AppUtils.message(binding!!.root, "Please enter living area")
+            AppUtils.message(binding!!.root, getString(R.string.enter_area))
 
             return false
         } else if (binding.etPhone.text.toString().equals("")) {
-            AppUtils.message(binding!!.root, "Please enter Contact number")
+            AppUtils.message(binding!!.root, getString(R.string.enter_phone))
 
             return false
         }
 
        else if (!NumberValidation.isValid(binding.etPhone.text.toString())) {
-            AppUtils.message(binding!!.root,"Please input a valid mobile number!")
+            AppUtils.message(binding!!.root,getString(R.string.valid_phone))
             return false
 
         }

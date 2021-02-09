@@ -33,6 +33,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonNull
 import com.nuveq.data_entry.R
 import com.nuveq.data_entry.feature.HomeFragment
+import com.nuveq.data_entry.feature.auth.RegistrationActivity
 import com.nuveq.data_entry.network.ApiService
 import com.nuveq.data_entry.network.RestAPiClient
 import com.yarolegovich.slidingrootnav.SlidingRootNav
@@ -54,7 +55,7 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
 
     var homeFragment: HomeFragment? = null
 
-    var langSwitch:SwitchCompat?=null
+    var langSwitch: SwitchCompat? = null
     // toolbar titles respected to selected nav menu item
 
     // flag to load home fragment when user presses back key
@@ -71,6 +72,8 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
         initAllFragment()
         if (App.instance.getLangSwitch()) {
             setLocale("bn")
+        } else {
+            setLocale("en")
 
         }
         binding = DataBindingUtil.setContentView(this, layoutResourceFile)
@@ -136,9 +139,9 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
         builder.setTitle(getString(R.string.logout_title))
         builder.setMessage(getString(R.string.logout_message))
         builder.setIcon(R.drawable.logout_icon)
-        builder.setNegativeButton("No", null)
-        builder.setPositiveButton("Yes") { dialog: DialogInterface?, which: Int ->
-            finish()
+        builder.setNegativeButton(getString(R.string.no), null)
+        builder.setPositiveButton(getString(R.string.yes)) { dialog: DialogInterface?, which: Int ->
+            startActivity(this,RegistrationActivity::class.java,true)
         }
         val dialog = builder.create()
         dialog.show()

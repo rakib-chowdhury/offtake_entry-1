@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.nuveq.data_entry.R;
@@ -159,34 +160,15 @@ public class HomeActivity extends BaseActivity implements DrawerAdapter.OnItemSe
                 createItemFor(POS_LOGOUT)));
         adapter.setListener(this);
 
+        LinearLayout langSetting = findViewById(R.id.ln_lang);
+        langSetting.setOnClickListener(v -> {
+            startActivity(this, LanguageActivity.class, false);
+        });
+
         RecyclerView list = findViewById(R.id.list);
         list.setNestedScrollingEnabled(false);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
-        SwitchCompat langSwitch = findViewById(R.id.switch_lang);
-
-
-        if (App.instance.getLangSwitch()) {
-            setLocale("bn");
-            langSwitch.setChecked(true);
-            langSwitch.setText("bn");
-        }
-
-        langSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                App.instance.setLangSwitch(isChecked);
-                if (isChecked) {
-                    setLocale("bn");
-                    langSwitch.setText("bn");
-                } else {
-                    setLocale("en");
-                    langSwitch.setText("en");
-
-                }
-            }
-        });
-
         adapter.setSelected(HOME_FRAGMENT);
     }
 

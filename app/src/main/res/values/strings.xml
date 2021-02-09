@@ -34,7 +34,7 @@
     <string name="dialoge_text">Are you sure,want exit from App?</string>
     <string name="it_support">Developed by DIGISEBA Software LTD</string>
     <string name="change_pass">পাসওয়ার্ড পরিবর্তন</string>
-    <string name="home">হোম</string>
+    <string name="home">Home</string>
     <string name="please_wait">Please wait...</string>
     <string name="user_id">User name</string>
     <string name="pass">Password</string>
@@ -60,13 +60,24 @@
     <string name="enter_qty">Enter quantity</string>
     <string name="select_sku">Select SKU</string>
     <string name="add_to_list">Add to List</string>
-    <string name="change_language">Change Language</string>
+    <string name="change_language">Select Language</string>
     <string name="data_entry">Data Entry</string>
     <string name="store">Store</string>
     <string name="change">Change</string>
     <string name="old_pass">Old Password</string>
     <string name="new_pass">New Password</string>
     <string name="con_pass">Confirm Password</string>
+    <string name="en">en</string>
+    <string name="bn">বাংলা</string>
+    <string name="english">English</string>
+    <string name="lang_setting">Language Settings</string>
+    <string name="added_list">Add to list</string>
+    <string name="fill_up">Please fill up field</string>
+    <string name="empty_cart">Product cart is empty</string>
+    <string name="enter_con_name">Please enter Consumer name</string>
+    <string name="enter_area">Please enter living address</string>
+    <string name="enter_phone">Please enter Contact number</string>
+    <string name="valid_phone">Please input a valid mobile number!</string>
 
     <string-array name="ld_activityScreenTitles">
         <item>HOME</item>
