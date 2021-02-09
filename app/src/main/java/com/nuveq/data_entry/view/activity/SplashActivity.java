@@ -29,15 +29,11 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                loadingView = findViewById(R.id.loadingView);
-
-
-                loadingView.setVisibility(View.GONE);
                 startActivity(new Intent(SplashActivity.this, RegistrationActivity.class));
                 finish();
 
             }
-        },3000);
+        },2000);
 
 
     }
