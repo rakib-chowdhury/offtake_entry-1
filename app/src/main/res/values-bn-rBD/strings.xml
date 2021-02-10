@@ -11,7 +11,7 @@
     <string name="no_internet">কোন ইন্টারনেট নেই!</string>
     <string name="connect">সংযোগ করুন</string>
     <string name="menu_setting">সেটিংস</string>
-    <string name="menu_history">ইতিহাস</string>
+    <string name="menu_history">অর্ডার হিস্টোরি </string>
     <string name="empty_result">কোন তথ্য নেই</string>
     <string name="search">অনুসন্ধান</string>
     <string name="alert">সতর্ক করুন!</string>
@@ -28,19 +28,19 @@
     <string name="change_pass">পাসওয়ার্ড পরিবর্তন</string>
     <string name="home">হোম</string>
     <string name="please_wait">অনুগ্রহপূর্বক অপেক্ষা করুন...</string>
-    <string name="user_id">ব্যবহারকারীর নাম</string>
-    <string name="pass">পাসওয়ার্ড</string>
+    <string name="user_id">ব্যবহারকারীর আইডি</string>
+    <string name="pass">ব্যবহারকারীর পাসওয়ার্ড</string>
     <string name="login">প্রবেশ করুন</string>
     <string name="er">ত্রুটি!</string>
     <string name="input_name">অনুগ্রহ করে ব্যবহারকারীর নাম দিন</string>
     <string name="input_pass">অনুগ্রহ করে পাসওয়ার্ড দিন</string>
     <string name="new_order">নতুন অর্ডার</string>
     <string name="outlate">আউটলেট নম্বর</string>
-    <string name="target">মাসিক লক্ষ্য</string>
-    <string name="d_target">দৈনিক লক্ষ্য</string>
+    <string name="target">মাসিক টারগেট</string>
+    <string name="d_target">দৈনিক টারগেট</string>
     <string name="working_day">কাজের দিন</string>
-    <string name="till_date">তারিখ অফ-টেক পর্যন্ত</string>
-    <string name="off_take">অফ-টেক পার দিন</string>
+    <string name="till_date">আজ পর্যন্ত অফটেক</string>
+    <string name="off_take">দৈনিক টারগেট রিচ অফটেক</string>
     <string name="c_name">গ্রাহকের নাম</string>
     <string name="c_phone">গ্রাহকের যোগাযোগ নম্বর</string>
     <string name="c_address">গ্রাহকের ঠিকানা</string>
@@ -73,10 +73,17 @@
     <string name="enter_phone">যোগাযোগ নম্বর প্রবেশ করুন</string>
     <string name="valid_phone">একটি বৈধ মোবাইল নম্বর ইনপুট করুন!</string>
 
+    <string name="input_old_pass">পুরানো পাসওয়ার্ড ইনপুট করুন</string>
+    <string name="not_matched">নতুন এবং নিশ্চিত পাসওয়ার্ড মেলে না!</string>
+    <string name="input_con_pass"> নিশ্চিত পাসওয়ার্ড ইনপুট করুন</string>
+    <string name="input_new_pass">তুন পাসওয়ার্ড ইনপুট করুন</string>
+    <string name="exit_app">প্রস্থান</string>
+
+
     <string-array name="ld_activityScreenTitles">
         <item>হোম</item>
         <item>আমার প্রোফাইল</item>
-        <item>ইতিহাস</item>
+        <item>অর্ডার হিস্টোরি</item>
         <item>পাসওয়ার্ড পরিবর্তন</item>
         <item />
         <item>প্রস্থান করুন</item>

@@ -344,11 +344,11 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
         get() {
             val alertDialogBuilder = androidx.appcompat.app.AlertDialog.Builder(this)
             alertDialogBuilder.setMessage(resources.getString(R.string.dialoge_text))
-            alertDialogBuilder.setPositiveButton(resources.getString(R.string.yes)
-            ) { dialog, which ->
+            alertDialogBuilder.setPositiveButton(resources.getString(R.string.yes)) { dialog, which ->
                 dialog.dismiss()
                 finish()
-            }
+            }.setIcon(R.drawable.logout_icon).setTitle(getString(R.string.exit_app))
+
             alertDialogBuilder.setNegativeButton(resources.getString(R.string.no)) { dialog, which -> dialog.dismiss() }
             val alertDialog = alertDialogBuilder.create()
             alertDialog.show()

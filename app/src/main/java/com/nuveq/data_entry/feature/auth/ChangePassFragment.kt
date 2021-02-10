@@ -69,16 +69,17 @@ class ChangePassFragment : BaseFragment() {
 
     fun isValid(): Boolean {
         if (binding!!.etOldPass.text.toString().equals("")) {
-            binding!!.etOldPass.setError("please input old password")
+            AppUtils.message(binding.root,getString(R.string.input_old_pass))
             return false;
         } else if (binding!!.etNewPass.text.toString().equals("")) {
-            binding!!.etNewPass.setError("please input new password")
+            AppUtils.message(binding.root,getString(R.string.input_new_pass))
+
             return false;
         } else if (binding!!.etConfirmPass.text.toString().equals("")) {
-            binding!!.etConfirmPass.setError("please input confirm password")
+            AppUtils.message(binding.root,getString(R.string.input_con_pass))
             return false;
         } else if (!binding!!.etConfirmPass.text.toString().equals(binding!!.etNewPass.text.toString())) {
-            AppUtils.message(binding.root, "Confirm password is not matched!")
+            AppUtils.message(binding.root,getString(R.string.not_matched))
             return false;
         }
         return true

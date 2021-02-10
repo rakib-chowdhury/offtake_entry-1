@@ -70,7 +70,7 @@ class ProductRepository @Inject constructor(val apiService: ApiService, val gson
         data.date = date
         val jsonObject: JsonObject = JsonParser().parse(gson.toJson(data)).getAsJsonObject()
 
-        apiService.productHistory(jsonObject)!!.enqueue(object : Callback<DataHistoryResponse> {
+        apiService.productHistory(App.instance.getLang(),jsonObject)!!.enqueue(object : Callback<DataHistoryResponse> {
             override fun onResponse(call: Call<DataHistoryResponse>, response: Response<DataHistoryResponse>) {
                 if (response.isSuccessful) {
                     if (!response.body()!!.history.isNullOrEmpty()) {

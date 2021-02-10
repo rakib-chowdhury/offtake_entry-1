@@ -20,7 +20,7 @@ interface ApiService {
 
 
     @GET(HTTP_PARAM.STORE_LIST)
-    fun storeList(): Call<StoreResponse>
+    fun storeList(@Header("lang") lang:String): Call<StoreResponse>
 
     @POST(HTTP_PARAM.SUBMIT_DATA)
     fun postProduct(@Body data: JsonObject): Call<ErrorResponse>
@@ -38,9 +38,9 @@ interface ApiService {
 
 
     @POST(HTTP_PARAM.HISTORY_LIST)
-    fun productHistory(@Body data: JsonObject): Call<DataHistoryResponse>
+    fun productHistory(@Header("lang") lang:String,@Body data: JsonObject): Call<DataHistoryResponse>
 
 
     @GET(HTTP_PARAM.HOME_SUMMERY)
-    fun homeSummery(): Call<HomeSummery>
+    fun homeSummery(@Header("lang") lang:String): Call<HomeSummery>
 }

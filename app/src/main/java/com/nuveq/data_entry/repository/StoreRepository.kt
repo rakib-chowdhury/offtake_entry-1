@@ -2,6 +2,7 @@ package com.nuveq.data_entry.repository
 
 import androidx.lifecycle.MutableLiveData
 import com.google.gson.Gson
+import com.nuveq.data_entry.common.App
 
 import com.nuveq.data_entry.common.DataResource
 import com.nuveq.data_entry.model.HomeSummery
@@ -21,7 +22,7 @@ class StoreRepository @Inject constructor(val apiService: ApiService, val gson: 
     fun storeData() {
         store.value = DataResource.loading()
 
-        apiService.storeList()!!.enqueue(object : Callback<StoreResponse> {
+        apiService.storeList(App.instance.getLang())!!.enqueue(object : Callback<StoreResponse> {
             override fun onResponse(call: Call<StoreResponse>, response: Response<StoreResponse>) {
 
                 if (response.isSuccessful) {
@@ -48,7 +49,7 @@ class StoreRepository @Inject constructor(val apiService: ApiService, val gson: 
     fun summeryData() {
         summery.value = DataResource.loading()
 
-        apiService.homeSummery()!!.enqueue(object : Callback<HomeSummery> {
+        apiService.homeSummery(App.instance.getLang())!!.enqueue(object : Callback<HomeSummery> {
             override fun onResponse(call: Call<HomeSummery>, response: Response<HomeSummery>) {
 
                 if (response.isSuccessful) {
