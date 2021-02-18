@@ -73,7 +73,7 @@ object AppUtils {
 
     fun changeDateFormat(date: String): String {
         val OLD_FORMAT = "yy/mm/dd"
-        val NEW_FORMAT = "dd/MM/yyyy"
+        val NEW_FORMAT = "dd/mm/yyyy"
 
 // August 12, 2010
 

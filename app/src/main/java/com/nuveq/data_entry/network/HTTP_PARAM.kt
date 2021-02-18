@@ -8,6 +8,6 @@ object HTTP_PARAM {
     const val HOME_SUMMERY = "summary"
     const val SUBMIT_DATA = "submitDataEntry"
     const val STORE_LIST = "storeList"
-    const val BASE_URL = "http://data-entry.totaldecormart.com/api/"
-    const val IMAGE_URL = "http://data-entry.totaldecormart.com"
+    const val BASE_URL = "http://cgdsales.abulkhairgroup.com/BPOFFTAKE/api/"
+    const val IMAGE_URL = "http://cgdsales.abulkhairgroup.com/BPOFFTAKE"
 }

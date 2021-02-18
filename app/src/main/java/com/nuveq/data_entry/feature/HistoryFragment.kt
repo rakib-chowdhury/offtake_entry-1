@@ -86,9 +86,9 @@ class HistoryFragment : BaseFragment(), HistoryAdapter.Interaction {
     fun showDatePicker(editText: EditText, c: Calendar) {
       var  dpd = DatePickerDialog(activity!!, R.style.DatePickerDialogTheme, OnDateSetListener { datePicker, yy, mm, dd ->
           var mm = mm
-          mm += 1
-          editText.setText(changeDateFormat("$yy/$mm/$dd"))
-          val date = changeDateFormat("$yy/$mm/$dd")
+          mm= mm +1
+          var date=changeDateFormat("$yy/$mm/$dd")
+          editText.setText(date)
           viewModel.getProductHistory(date)
 
       },
