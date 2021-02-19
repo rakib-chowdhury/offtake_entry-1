@@ -70,6 +70,12 @@ object AppUtils {
         return formatter.format(date)
     }
 
+    fun getCurrentDateInEnglish(): String {
+        val formatter = SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)
+        val date = Date()
+        return formatter.format(date)
+    }
+
 
     fun changeDateFormat(date: String): String {
         val OLD_FORMAT = "yy/mm/dd"
@@ -85,4 +91,56 @@ object AppUtils {
         sdf.applyPattern(NEW_FORMAT)
         return sdf.format(d)
     }
+
+    fun changeDateFormatIOnEnglish(date: String): String {
+        val OLD_FORMAT = "yy/mm/dd"
+        val NEW_FORMAT = "dd/MM/yyyy"
+
+// August 12, 2010
+
+// August 12, 2010
+        val oldDateString = date
+
+        val sdf = SimpleDateFormat(OLD_FORMAT,Locale.ENGLISH)
+        val d = sdf.parse(oldDateString)
+        sdf.applyPattern(NEW_FORMAT)
+        return sdf.format(d)
+    }
+
+    fun String.englishNumberChangeToBanglaNumber(): String {
+        val hash = HashMap<Int, String>()
+        hash[0] = "০"
+        hash[1] = "১"
+        hash[2] = "২"
+        hash[3] = "৩"
+        hash[4] = "৪"
+        hash[5] = "৫"
+        hash[6] = "৬"
+        hash[7] = "৭"
+        hash[8] = "৮"
+        hash[9] = "৯"
+/*
+        hash[০] = "0"
+        hash[১] = "1"
+        hash[২] = "2"
+        hash[৩] = "3"
+        hash[৪] = "4"
+        hash[৫] = "5"
+        hash[৬] = "6"
+        hash[৭] = "7"
+        hash[৮] = "8"
+        hash[৯] = "9"*/
+        var banglaDate = ""
+        this.forEach {
+            try {
+                val digit = it.toString().toInt()
+                banglaDate += hash[digit]
+            } catch (e: Exception) {
+                banglaDate += it
+            }
+        }
+        return banglaDate
+
+    }
+
 }

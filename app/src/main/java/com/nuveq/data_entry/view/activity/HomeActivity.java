@@ -51,12 +51,12 @@ public class HomeActivity extends BaseActivity implements DrawerAdapter.OnItemSe
     private static final int HISTORY_FRAGMENT = 2;
     private static final int CHANGE_PASS_FRAGMENT = 3;
     private static final int POS_LOGOUT = 5;
-    private Calendar calendar;
 
     private String[] screenTitles;
     private Drawable[] screenIcons;
-    DatePickerDialog dpd;
     private SlidingRootNav slidingRootNav;
+    private Calendar calendar;
+    DatePickerDialog dpd;
     private CallHistoryApi callHistoryApiInterface;
     private ActivityMainBinding binding;
 

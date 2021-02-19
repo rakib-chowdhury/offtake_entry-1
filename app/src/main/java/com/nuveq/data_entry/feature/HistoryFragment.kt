@@ -14,7 +14,9 @@ import com.nuveq.data_entry.di.ViewModelProviderFactory
 import com.nuveq.data_entry.feature.adapter.HistoryAdapter
 import com.nuveq.data_entry.utils.AppUtils
 import com.nuveq.data_entry.utils.AppUtils.changeDateFormat
+import com.nuveq.data_entry.utils.AppUtils.changeDateFormatIOnEnglish
 import com.nuveq.data_entry.utils.AppUtils.getCurrentDate
+import com.nuveq.data_entry.utils.AppUtils.getCurrentDateInEnglish
 import java.util.*
 import javax.inject.Inject
 
@@ -36,7 +38,7 @@ class HistoryFragment : BaseFragment(), HistoryAdapter.Interaction {
     override fun initFragmentComponents() {
         binding = getBinding() as FragmentHistoryBinding
         viewModel = ViewModelProvider(this, viewModelProviderFactory).get(ProductViewModel::class.java)
-        viewModel.getProductHistory(AppUtils.getCurrentDate())
+        viewModel.getProductHistory(getCurrentDateInEnglish())
         historyAdapter = HistoryAdapter(this)
         binding!!.adapter = historyAdapter
         calendar = Calendar.getInstance()
@@ -68,7 +70,7 @@ class HistoryFragment : BaseFragment(), HistoryAdapter.Interaction {
         })
 
         binding.refresh.setOnRefreshListener {
-            viewModel.getProductHistory(getCurrentDate())
+            viewModel.getProductHistory(getCurrentDateInEnglish())
         }
 
         binding.tvDate.setText(getCurrentDate())
@@ -88,7 +90,7 @@ class HistoryFragment : BaseFragment(), HistoryAdapter.Interaction {
           var mm = mm
           mm += 1
           editText.setText(changeDateFormat("$yy/$mm/$dd"))
-          val date = changeDateFormat("$yy/$mm/$dd")
+          val date = changeDateFormatIOnEnglish("$yy/$mm/$dd")
           viewModel.getProductHistory(date)
 
       },
